@@ -1,36 +1,25 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div style="display: flex; flex-direction: column; align-items: center; justify-content: center">
+<img alt="Logo" height="128" src="public/img/logo.png" width="128"/> 
+<h1 style="padding: 0; margin: 0; color: #a5f3fc">Hopper</h1>
+</div>
 
-## Getting Started
+# About Hopper
 
-First, run the development server:
+Hopper is a traceroute visualizer and tool that can execute traceroute commands and display the results in a visual way.
+It runs using Next.js and is styled using Tailwind CSS.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+# How to run
+1. Clone the repository `git clone https://github.com/hamdielzard/hopper.git`
+2. Install the dependencies `npm install`
+3. Run the development server `npm run dev`
+4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Features
+- Visualize traceroute results
+- Execute traceroute commands
+- Save traceroute results
+- Load saved traceroute results
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+# How to Use
+- Refer to the [Project Report](Project%20Report.pdf) for a detailed explanation of the project and how to use it.
+- Inside the project report, there is a video link that demonstrates how to use the project, and presents it.
