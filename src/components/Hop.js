@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import unknown from '/public/img/unknown.png'
 
 const Hop = props => {
     return (
