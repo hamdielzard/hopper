@@ -332,14 +332,23 @@ export default function Home() {
         setLoadingText("Getting geolocation data...")
         for (let i = 0; i < result.length; i++) {
             let ip = result[i].ipAddr;
-            let url = `https://ipapi.co/${ip}/json/`;
-            let response = await fetch(url);
-            let data = await response.json();
-            result[i].city = data.city;
-            result[i].country = data.country_name;
-            result[i].countryCode = data.country;
-            result[i].lat = data.latitude;
-            result[i].lon = data.longitude;
+            if (ip !== "*"){
+                let url = `https://ipapi.co/${ip}/json/`;
+                let response = await fetch(url);
+                let data = await response.json();
+                result[i].city = data.city;
+                result[i].country = data.country_name;
+                result[i].countryCode = data.country;
+                result[i].lat = data.latitude;
+                result[i].lon = data.longitude;
+            }
+            else {
+                result[i].city = null;
+                result[i].country = null;
+                result[i].countryCode = null;
+                result[i].lat = null;
+                result[i].lon = null;
+            }
         }
     }
 
